@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		CE2C760B1C99D71400699CC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C760A1C99D71400699CC5 /* main.m */; };
 		CE2C760E1C99D71400699CC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C760D1C99D71400699CC5 /* AppDelegate.m */; };
-		CE2C76111C99D71400699CC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C76101C99D71400699CC5 /* ViewController.m */; };
 		CE2C76141C99D71400699CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C76121C99D71400699CC5 /* Main.storyboard */; };
 		CE2C76161C99D71400699CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2C76151C99D71400699CC5 /* Assets.xcassets */; };
 		CE2C76191C99D71400699CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C76171C99D71400699CC5 /* LaunchScreen.storyboard */; };
+		CE2C76221C99D73300699CC5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C76211C99D73300699CC5 /* LoginViewController.m */; };
+		CE2C76261CA081E100699CC5 /* LoginHeader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE2C76251CA081E100699CC5 /* LoginHeader.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,13 @@
 		CE2C760A1C99D71400699CC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2C760C1C99D71400699CC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE2C760D1C99D71400699CC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE2C760F1C99D71400699CC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE2C76101C99D71400699CC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE2C76131C99D71400699CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE2C76151C99D71400699CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2C76181C99D71400699CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2C761A1C99D71400699CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2C76201C99D73300699CC5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CE2C76211C99D73300699CC5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CE2C76251CA081E100699CC5 /* LoginHeader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginHeader.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +62,14 @@
 			children = (
 				CE2C760C1C99D71400699CC5 /* AppDelegate.h */,
 				CE2C760D1C99D71400699CC5 /* AppDelegate.m */,
-				CE2C760F1C99D71400699CC5 /* ViewController.h */,
-				CE2C76101C99D71400699CC5 /* ViewController.m */,
 				CE2C76121C99D71400699CC5 /* Main.storyboard */,
 				CE2C76151C99D71400699CC5 /* Assets.xcassets */,
+				CE2C76251CA081E100699CC5 /* LoginHeader.jpg */,
 				CE2C76171C99D71400699CC5 /* LaunchScreen.storyboard */,
 				CE2C761A1C99D71400699CC5 /* Info.plist */,
 				CE2C76091C99D71400699CC5 /* Supporting Files */,
+				CE2C76201C99D73300699CC5 /* LoginViewController.h */,
+				CE2C76211C99D73300699CC5 /* LoginViewController.m */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2C76191C99D71400699CC5 /* LaunchScreen.storyboard in Resources */,
+				CE2C76261CA081E100699CC5 /* LoginHeader.jpg in Resources */,
 				CE2C76161C99D71400699CC5 /* Assets.xcassets in Resources */,
 				CE2C76141C99D71400699CC5 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2C76111C99D71400699CC5 /* ViewController.m in Sources */,
 				CE2C760E1C99D71400699CC5 /* AppDelegate.m in Sources */,
 				CE2C760B1C99D71400699CC5 /* main.m in Sources */,
+				CE2C76221C99D73300699CC5 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				CE2C761F1C99D71400699CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
