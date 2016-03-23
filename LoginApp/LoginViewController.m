@@ -10,7 +10,6 @@
 
 @interface LoginViewController ()
 
-@property (weak, nonatomic) IBOutlet UISwitch *remeberPassword;
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
@@ -20,8 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *rememberMeButton;
 
 @end
-
-
 
 
 @implementation LoginViewController
@@ -59,14 +56,6 @@
                                   initWithTarget:self
                                   action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
-    
-    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    
-    //NSString *savedUsername = [defaults objectForKey:@"username"];
-    //NSString *savedPassword = [defaults objectForKey:@"password"];
-    //self.usernameTextField.text = savedUsername;
-    //self.passwordTextField.text = savedPassword;
 }
 
 
@@ -117,16 +106,25 @@
 }
 
 - (IBAction)login {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     NSString *username = self.usernameTextField.text;
     NSString *password = self.passwordTextField.text;
-    if (self.remeberPassword.on) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        [defaults setObject:username forKey:@"username"];
-        [defaults setObject:password forKey:@"password"];
-        
-        [defaults synchronize];
+    
+    NSDictionary *usersLoginDatabase = [defaults objectForKey:@"usersLoginDatabase"];
+
+    if ([usersLoginDatabase objectForKey:password]) {
+        // You can login with aaa - aaa
+        if (self.rememberMeCheckBox.isSelected) {
+            NSMutableDictionary *tempUsersLoginDatabase =[[NSMutableDictionary alloc] initWithDictionary:usersLoginDatabase];
+            [tempUsersLoginDatabase setObject:password  forKey:username];
+            [defaults setObject:tempUsersLoginDatabase forKey:@"usersLoginDatabase"];
+            NSLog(@"%@ Logged in and saved pass", username);
+            return;
+        }
+        NSLog(@"%@ Logged in", username);
     }
+    
 }
 
 @end
