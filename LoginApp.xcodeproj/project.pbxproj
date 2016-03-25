@@ -14,6 +14,7 @@
 		CE2C76191C99D71400699CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C76171C99D71400699CC5 /* LaunchScreen.storyboard */; };
 		CE2C76221C99D73300699CC5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C76211C99D73300699CC5 /* LoginViewController.m */; };
 		CE2C76261CA081E100699CC5 /* LoginHeader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE2C76251CA081E100699CC5 /* LoginHeader.jpg */; };
+		CEEE5FE61CA5C434002D494D /* SignUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEE5FE51CA5C434002D494D /* SignUpButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		CE2C76201C99D73300699CC5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CE2C76211C99D73300699CC5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CE2C76251CA081E100699CC5 /* LoginHeader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginHeader.jpg; sourceTree = "<group>"; };
+		CEEE5FE41CA5C434002D494D /* SignUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpButton.h; sourceTree = "<group>"; };
+		CEEE5FE51CA5C434002D494D /* SignUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				CE2C76091C99D71400699CC5 /* Supporting Files */,
 				CE2C76201C99D73300699CC5 /* LoginViewController.h */,
 				CE2C76211C99D73300699CC5 /* LoginViewController.m */,
+				CEEE5FE41CA5C434002D494D /* SignUpButton.h */,
+				CEEE5FE51CA5C434002D494D /* SignUpButton.m */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				CE2C760E1C99D71400699CC5 /* AppDelegate.m in Sources */,
 				CE2C760B1C99D71400699CC5 /* main.m in Sources */,
 				CE2C76221C99D73300699CC5 /* LoginViewController.m in Sources */,
+				CEEE5FE61CA5C434002D494D /* SignUpButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

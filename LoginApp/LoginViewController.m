@@ -23,7 +23,7 @@
 
 @implementation LoginViewController
 
-@synthesize loginToButtomDistanceFromStoryBoard;
+//@synthesize loginToButtomDistanceFromStoryBoard;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
